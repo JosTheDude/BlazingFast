@@ -1,0 +1,15 @@
+.blazing-fast {
+    background: linear-gradient(90deg, yellow, orange, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Make the gradient large enough so the shift is noticeable */
+    background-size: 200% 100%;
+    animation: shiftGradient 3s infinite linear;
+}
+
+@keyframes shiftGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

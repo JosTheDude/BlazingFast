@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Blazing Fast Rust",
+    "version": "1.0",
+    "description": "Converts all mentions of Rust to Blazing Fast",
+    "permissions": ["activeTab"],
+    "background": {
+    },
+    "action": {
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css": ["styles.css"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
+  
